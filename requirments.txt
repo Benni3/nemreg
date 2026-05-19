@@ -1,0 +1,25 @@
+# Core numerical stack
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.2
+
+# Plotting
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.22.0
+
+# Symbolic mathematics
+sympy==1.12
+
+# Uncertainty propagation
+uncertainties==3.2.1
+
+# Machine learning / regression
+scikit-learn==1.4.2
+statsmodels==0.14.2
+
+# Jupyter environment
+jupyter==1.0.0
+ipykernel==6.29.4
+notebook==7.2.0
+jupyterlab==4.2.0

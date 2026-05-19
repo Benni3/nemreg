@@ -1,0 +1,103 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Testing title}}\\
+\end{center}
+\vspace{4pt}
+\hrule
+\vspace{10pt}
+
+\textbf{Notes}\\
+
+lorem ipsum
+
+\vspace{8pt}
+
+\begin{figure}[h!]
+    \centering
+    \scalebox{1.25}[1.0]{%
+        \includegraphics{plot_data_fit.png}%
+    }
+    \caption{Graph showing linear regression of Full test dataset (linear) + textbook model) of Testing title}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{multicols}{2}
+
+\textbf{Fit summary}\\[-2pt]
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+Key & Value \\
+\midrule
+Model & linear \\
+$R^2$ & 0.9946 \\
+RMSE & 0.5437 \\
+$\chi^2$ & 36.2 \\
+$\chi^2_{\mathrm{red}}$ & 0.6242 \\
+dof & 58 \\
+weighted & Yes \\
+absolute sigma & Yes \\
+method & None \\
+maxfev & 100000 \\
+bounds & Yes \\
+initial guess p0 & (not stored) \\
+\bottomrule
+\end{tabularx}
+
+\vspace{15pt}
+
+\[
+f(x) = 2.514 x - 0.9543
+\]
+
+\columnbreak
+
+\textbf{Fitted parameters}\\[-2pt]
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+Parameter & Estimate \\
+\midrule
+A & 2.514 $\pm$ 0.03079 \\
+B & -0.9543 $\pm$ 0.09037 \\
+\bottomrule
+\end{tabularx}
+
+\vspace{8pt}
+
+\textbf{Dataset info}\\[-0pt]
+\vspace{2pt}
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+Key & Value \\
+\midrule
+Name & Full test dataset (linear) \\
+n (samples) & 60 \\
+d (features) & 1 \\
+x label & x \\
+y label & y \\
+yerr & Provided \\
+xerr & None \\
+x min/max & x1: [-5, 5] \\
+y min/max & [-13.8, 12.18] \\
+\bottomrule
+\end{tabularx}
+
+\end{multicols}
+
+\end{document}

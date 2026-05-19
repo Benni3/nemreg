@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: nemreg
+Version: 0.1.0
+Summary: Easy Reggression
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: uncertainties
+Dynamic: license-file
