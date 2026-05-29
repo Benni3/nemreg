@@ -1,5 +1,8 @@
 # nemreg
 
+[![PyPI](https://img.shields.io/pypi/v/nemreg)](https://pypi.org/project/nemreg/)
+[![License](https://img.shields.io/github/license/Benni3/NemReg)](LICENSE)
+
 A lightweight regression framework built on top of SciPy.
 
 **nemreg** is designed to make regression analysis structured, compact, and easy to use — without sacrificing flexibility.  
